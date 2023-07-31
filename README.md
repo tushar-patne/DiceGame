@@ -1,5 +1,5 @@
 # CSS - Styled Components
-use useContext instead of useState for state management
+used useContext hook to pass the props to children components
 
 
 # React + Vite
