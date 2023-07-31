@@ -1,8 +1,10 @@
 import React from "react";
 import { styled } from "styled-components";
-import { useState } from "react";
+import { useContext } from "react";
+import { diceGameContext } from "./GamePlay";
 
-const NumberSelector = ({ selectedNum, setSelectedNum, errMsg, setErrMsg }) => {
+const NumberSelector = () => {
+  const {selectedNum, setSelectedNum, errMsg, setErrMsg} = useContext(diceGameContext);
   const select_numbers = [1, 2, 3, 4, 5, 6];
 
   const selectNumHandler = (num) => {

@@ -1,7 +1,12 @@
 import React from 'react'
 import {styled} from 'styled-components'
+import { useContext } from 'react'
+import { diceGameContext } from './GamePlay'
 
-const TotalScore = ({score}) => {
+const TotalScore = () => {
+
+  const {score} = useContext(diceGameContext)
+
   return (
     <Score>
           <div className="score">{score}</div>

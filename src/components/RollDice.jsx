@@ -1,7 +1,11 @@
 import {styled} from "styled-components"
 import {BsArrowDownSquare} from 'react-icons/bs'
+import { useContext } from "react"
+import { diceGameContext } from "./GamePlay"
 
-const RollDice = ({showRule, diceValue, randomImageHandler, setScore}) => {
+const RollDice = () => {
+
+    const {showRule, diceValue, randomImageHandler, setScore} = useContext(diceGameContext);
 
   return (
     <DiceContainer>
