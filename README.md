@@ -1,4 +1,5 @@
 # CSS - Styled Components
+use useContext instead of useState for state management
 
 
 # React + Vite
