@@ -57,9 +57,9 @@ const GamePlay = () => {
 const Main = styled.main`
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     height: 100vh;
-    padding: 4rem 5rem ;
+    padding: 1rem 5rem ;
 `
 
 const GameHeader = styled.main`
