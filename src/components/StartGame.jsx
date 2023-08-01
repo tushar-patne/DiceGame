@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StartGame = () => {
+const StartGame = ({setIsGameStarted}) => {
   return (
     <StartContainer className='start_container'>
         <div className="dices">
@@ -10,7 +10,7 @@ const StartGame = () => {
             <h1>
                 DICE GAME
             </h1>
-            <Button>
+            <Button onClick={() => setIsGameStarted(prev => !prev)}>
                 Play Now
             </Button>
         </div>
@@ -53,6 +53,13 @@ const Button = styled.button`
     min-width: 220px;
     text-align: center;
     float: right;
+    border: 1px solid transparent;
+    transition: 0.2s all ease-in;
+    &:hover{
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
 `
 
 export default StartGame

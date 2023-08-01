@@ -17,7 +17,6 @@ const Rules = () => {
 
 const RulesContainer = styled.div`
     width: 49.5rem;
-    height: 13rem;
     background-color: #FBF1F1;
     padding: 1.2rem;
     margin: 0 auto;
